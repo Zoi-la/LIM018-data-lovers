@@ -11,3 +11,8 @@
 
 }
 
+.cardPokemon{
+    width: 225px;
+    height: 274px;
+    border: 1px solid black;
+}
