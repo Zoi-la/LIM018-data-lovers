@@ -12,3 +12,4 @@ let root= document.querySelector('#root');
 let nombre= document.createElement("div");
 nombre.innerHTML=data.pokemon[1].name;
 root.appendChild(nombre);
+
