@@ -1,1 +1,13 @@
+#main-header {
+	background: rgb(241, 5, 60);
+	color: white;
+	height: 100px;
+    
+}
+#main-header img {
+    max-width:70%;
+    max-height:80%;
+    padding:10px 0 0 0;
+
+}
 
