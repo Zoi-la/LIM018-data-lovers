@@ -8,6 +8,7 @@ console.log(anotherExample());
 console.log(data.pokemon[1].img);
 console.log(data.pokemon[1].name);
 
+
 let root= document.querySelector('#root');
 data.pokemon.forEach((pokemon)=>{
     //creando caja
