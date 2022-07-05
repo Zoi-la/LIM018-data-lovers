@@ -14,15 +14,23 @@ data.pokemon.forEach((pokemon)=>{
     //creando caja
     let cajaPrincipal=document.createElement("div")
     cajaPrincipal.classList.add("cardPokemon");
-    //crear imagen
+    //creando imagen
     let imagen=document.createElement("img")
     imagen.src=pokemon.img;
+    //creando número
+    let numero= document.createElement("div");
+    numero.innerHTML=pokemon.num;
     //creando nombre
     let nombre= document.createElement("div");
     nombre.innerHTML=pokemon.name;
+    //creando tipo
+    let tipo= document.createElement("div");
+    tipo.innerHTML=pokemon.type;
     //contener los datos dentro de la caja
-    cajaPrincipal.appendChild(imagen)
+    cajaPrincipal.appendChild(imagen) 
+    cajaPrincipal.appendChild(numero)
     cajaPrincipal.appendChild(nombre)
+    cajaPrincipal.appendChild(tipo)
     //agregarlo al root
     root.appendChild(cajaPrincipal);
 });
