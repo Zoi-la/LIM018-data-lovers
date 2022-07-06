@@ -9,12 +9,6 @@ console.log(data.pokemon[1].img);
 console.log(data.pokemon[1].name);
 
 let root= document.querySelector('#root');
-<<<<<<< HEAD
-let nombre= document.createElement("div");
-nombre.innerHTML=data.pokemon[1].name;
-root.appendChild(nombre);
-
-=======
 data.pokemon.forEach((pokemon)=>{
     //creando caja
     let cajaPrincipal=document.createElement("div")
@@ -32,4 +26,3 @@ data.pokemon.forEach((pokemon)=>{
     root.appendChild(cajaPrincipal);
     
 })
->>>>>>> 334c260c2f0c95aca175214125197ae0cb638643
