@@ -1,5 +1,5 @@
 //import { } from '@babel/core';
-import { filterData } from './data.js';
+import { } from './data.js';
 
 // import data from './data/lol/lol.js';
 import data from './data/pokemon/pokemon.js';
@@ -33,12 +33,4 @@ let showPokemon= ()=>{
 }
 
 showPokemon()
- 
-
-let newArray=data.pokemon.filter((type)=>{
-    return (type.type==='grass')    
-    });
-    console.log(newArray)
-
-    
-console.log(filterData(8, 10))
+//console.log(filterData(8, 10))
