@@ -1,12 +1,13 @@
 //import { } from '@babel/core';
 import { filterData } from './data.js';
+import pokemon from './data/pokemon/pokemon.js';
 
 // import data from './data/lol/lol.js';
 import data from './data/pokemon/pokemon.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 let root= document.querySelector('#root');
 let showPokemon= ()=>{
-    data.pokemon.forEach((pokemon)=>{
+    data.pokemon.forEach((pokemon)=>{    
         //creando caja
         let cajaPrincipal=document.createElement("div")
         cajaPrincipal.classList.add("cardPokemon");
@@ -30,7 +31,7 @@ let showPokemon= ()=>{
         //agregarlo al root
         root.appendChild(cajaPrincipal);
     });
-}
+  }
 
 showPokemon()
  

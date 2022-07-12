@@ -34,7 +34,6 @@ body{
     
 #root{
     display: flex;
-    /* flex-direction: column; */
     flex-wrap: wrap;
     justify-content: center;
     background: rgb(240, 208, 148);
@@ -53,7 +52,7 @@ body{
     margin:0px 480px 0px 20px;
 }
 
-ul, ol {
+ul {
     list-style:none;
 }
 .nav {

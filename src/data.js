@@ -8,9 +8,8 @@ export const anotherExample = () => {
   return 'OMG';
 };
 
+
 export const filterData = (data, condition)=>{
   
   return(num1+num2)
 }
-
-
