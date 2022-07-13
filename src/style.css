@@ -1,20 +1,13 @@
 *{
     box-sizing: border-box;
     margin: 0px;
-    
 }
- footer {
-        display: flex;
-        justify-content: space-around;
-        color: rgb(240, 208, 148);
-        height: 50px;
-        bottom: 0;
+.header{
+        background-color:  antiquewhite;
+        height: 80px;
         width: 100%;
-        align-items: center;
-        background: rgb(0, 0, 0);
-        padding: 0;
+        padding:10px 20px;
     }
-
 .nav-menu{
     display:block;
 }
@@ -23,152 +16,111 @@ body{
 }
 #main-header {
     display: flex;
-	background: rgb(241, 5, 60);
-	color: white;
-	height: 100px;
+    background: rgb(241, 5, 60);
+    color: white;
+    height: 100px;
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: center;
     align-items: center;
 }
-    
 #root{
     display: flex;
+    /* flex-direction: column; */
     flex-wrap: wrap;
     justify-content: center;
     background: rgb(240, 208, 148);
 }
-
 #menu-header {
     background: rgb(240, 208, 148);
-    height: 70px;
-    padding:0px;
+    height: auto;
+    padding: 0px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: flex-start
 }
 #main-header img {
     max-width:70%;
     max-height:80%;
-    margin:0px 480px 0px 20px;
+    margin:0px 460px 0px 20px;
 }
-
-ul {
-    list-style:none;
-}
-.nav {
-    display: flex;
-    max-width: 992px;
-    width:auto; /*Le establecemos un ancho*/
-     /*Centramos automaticamente*/
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-.nav > li {
-    float:left;
-    
-}
-
-
 .nav li a {
-    background-color:rgb(235, 157, 39);
-    color:rgb(22, 26, 232);
-    text-decoration:none;
-    padding:10px 20px;
-    display:block;
+    background-color: rgb(235, 157, 39);
+    color: rgb(45, 49, 249);
+    padding: 5px 5px;
+    display: flex;
     border: 2px ridge rgb(13, 77, 227);
-
+    align-items: center;
+    justify-content: center;
 }
 .nav li a:hover {
-    background-color:#b41740;
- 
+    background-color:#fffdf8;
 }
 .nav li ul {
     display:none;
     position:absolute;
     min-width:140px;
+    padding: 0px;
 }
-
 .nav li:hover > ul {
     display:block;
 }
-
 .nav li ul li {
     position:relative;
 }
-
 .nav li ul li ul {
     right:-140px;
     top:50px;
 }
-
 .nav li img {
     width: 50px;
     height: 50px;
     padding: 10px;
 }
-
-.header{
-    background-color:  antiquewhite;
-    height: 80px;
-    width: 100%;
-    padding:10px 20px;
+ul, ol {
+    list-style:none;
 }
-
+.nav {
+    max-width: 992px;
+    width:auto;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 0%;
+}
+.nav > li {
+    float:left;
+}
 .nav-menu-link{
     padding: 8px 12px;
-    border-radius: 3px;           
+    border-radius: 3px;
 }
 .nav-menu-link:hover{
     background-color: rgba(255,205,0,255);
-    transition: 0.5s;       
+    transition: 0.5s;
 }
-
 .nav-menu{
     display: flex;
     margin-left: 20px;
     list-style: none;
 }
-
 .nav-menu li img{
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
 }
-
-.nav-menu-item{
-    font-size: 25px;
-    margin: 0 10px;
-    line-height: 10px;
-}
-
-
-
 .cardPokemon{
     width: 225px;
     height: 274px;
-    display: flex;    
+    display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
     margin: 10px;
     padding: 20px;
     border: 6px ridge rgb(224, 227, 234);
-    border-radius: 10px ;   
-    background-color: #ededec;
+    border-radius: 10px ;
+    background-color: #EDEDEC;
     color: rgb(121, 107, 107);
     text-transform: uppercase;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    flex-direction: column;  
-}
-
-footer {
-    position: relative;    
-    margin-top: 50px;
-    height: 40px;
-    padding:5px;    
-    background: #000000;
-    text-align: center;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #fff;
-
+    flex-direction: column;
 }
 .nav-toggle{
     color:white;
@@ -179,6 +131,14 @@ footer {
     line-height: 60px;
     display: none;
 }
-
-
-
+footer {
+    display: flex;
+    justify-content: space-around;
+    color: rgb(240, 208, 148);
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    padding: 0;
+}
