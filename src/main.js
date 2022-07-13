@@ -1,10 +1,10 @@
-//import { } from '@babel/core';
-import {} from './data.js';
-import pokemon from './data/pokemon/pokemon.js';
-
-// import data from './data/lol/lol.js';
 import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
+import {ordenarAscendente} from './data.js';
+
+let ordenar= document.getElementById("btn-ordenar");
+
+
+
 let root= document.querySelector('#root');
 let showPokemon= ()=>{
     data.pokemon.forEach((pokemon)=>{    
@@ -31,7 +31,15 @@ let showPokemon= ()=>{
         //agregarlo al root
         root.appendChild(cajaPrincipal);
     });
-  }
+}
+showPokemon();
+ordenar.addEventListener("click",e=>{
+    e.preventDefault();
+    root.innerHTML="";
+    let pokemonOrdenado=ordenarAscendente(data.pokemon);
+    for (let i=0; i<pokemonOrdenado.length;i++){
+        showPokemon(pokemonOrdenado[i]);
+    }
+})
 
-showPokemon()
 //console.log(filterData(8, 10))
