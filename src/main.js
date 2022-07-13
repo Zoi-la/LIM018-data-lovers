@@ -33,7 +33,6 @@ let showPokemon= ()=>{
 }
 
 showPokemon()
-<<<<<<< HEAD
  
 
 let newArray=data.pokemon.filter((type)=>{
@@ -43,6 +42,4 @@ let newArray=data.pokemon.filter((type)=>{
 
     
 console.log(filterData(8, 10))
-=======
 //console.log(filterData(8, 10))
->>>>>>> 5c251f02bca67fc270a88fa2875e3e0a1552fe26

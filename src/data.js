@@ -12,6 +12,6 @@ export const anotherExample = () => {
   
   return(num1+num2)
 }/*/
-export const filterData = (data, condicion) =>{}
+//export const filterData = (data, condicion) =>{}
 
 
