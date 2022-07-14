@@ -37,10 +37,8 @@ showPokemon();
 ordenar.addEventListener("click",e=>{
     e.preventDefault();
     root.innerHTML="";
-    let pokemonOrdenado=ordenarAscendente(data.pokemon);
-    for (let i=0; i<pokemonOrdenado.length;i++){
-        showPokemon(pokemonOrdenado[i]);
-    }
+    ordenarAscendente(data.pokemon);
+    showPokemon();
 })
-
 //console.log(filterData(8, 10))
+
