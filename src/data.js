@@ -21,7 +21,8 @@ export const ordenarAscendente = (data) => {
     if(a.name > b.name){
        return 1;
     }
+    // TODO: falta un caso por contemplar
     
  }
-  return data.sort(sortPokemon);
+  data.sort(sortPokemon);
 };
