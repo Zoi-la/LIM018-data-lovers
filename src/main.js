@@ -33,6 +33,7 @@ let showPokemon= ()=>{
     });
 }
 showPokemon();
+
 ordenar.addEventListener("click",e=>{
     e.preventDefault();
     root.innerHTML="";
