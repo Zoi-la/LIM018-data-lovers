@@ -4,24 +4,29 @@ export const example = () => {
   return 'example';
 };
 
-export const anotherExample = () => {
-  return 'OMG';
-};
-/*/export const filterData = (data, condition)=>{
-  
-  return(num1+num2)/*/
 
-export const ordenarAscendente = (data) => {
+//Funcion ordenar AZ
+export const ordenarAZ = (data) => {
   function sortPokemon(a,b){
     if(a.name < b.name){
        return -1;
-       
     }
-    
     if(a.name > b.name){
        return 1;
     }
-    
+    // TODO: falta un caso por contemplar
  }
-  return data.sort(sortPokemon);
+  data.sort(sortPokemon);
+};
+
+export const ordenarZA = (data) => {
+  function sortPokemonZA(a,b){
+    if (a.name<b.name){
+      return 1;
+    }
+    if(a.name > b.name){
+      return -1;
+   }
+  }
+  data.sort(sortPokemonZA);
 };
