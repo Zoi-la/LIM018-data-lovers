@@ -1,8 +1,8 @@
 import data from './data/pokemon/pokemon.js';
-import {ordenarAscendente} from './data.js';
+import {ordenarAZ,ordenarZA} from './data.js';
 
-let ordenar= document.getElementById("btn-ordenar");
-
+let ordenar= document.getElementById("btn-ordenarAZ");
+let ordenarZa=document.getElementById("btn-ordenarZA");
 
 
 let root= document.querySelector('#root');
@@ -37,8 +37,14 @@ showPokemon();
 ordenar.addEventListener("click",e=>{
     e.preventDefault();
     root.innerHTML="";
-    ordenarAscendente(data.pokemon);
+    ordenarAZ(data.pokemon);
     showPokemon();
 })
-//console.log(filterData(8, 10))
+
+ordenarZa.addEventListener("click",e=>{
+    e.preventDefault();
+    root.innerHTML="";
+    ordenarZA(data.pokemon);
+    showPokemon();
+})
 
