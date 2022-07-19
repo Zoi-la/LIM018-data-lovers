@@ -1,8 +1,9 @@
 import data from './data/pokemon/pokemon.js';
-import {ordenarAZ,ordenarZA} from './data.js';
+import {ordenarAZ,ordenarZA,ordenarAsc} from './data.js';
 
 let ordenar= document.getElementById("btn-ordenarAZ");
 let ordenarZa=document.getElementById("btn-ordenarZA");
+let ordenarAscendete=document.getElementById("btn-ordenarAsc");
 
 
 let root= document.querySelector('#root');
@@ -27,7 +28,7 @@ let showPokemon= ()=>{
         cajaPrincipal.appendChild(imagen) 
         cajaPrincipal.appendChild(numero)
         cajaPrincipal.appendChild(nombre)
-        cajaPrincipal.appendChild(tipo)
+        /*/cajaPrincipal.appendChild(tipo)/*/
         //agregarlo al root
         root.appendChild(cajaPrincipal);
     });
@@ -47,4 +48,14 @@ ordenarZa.addEventListener("click",e=>{
     ordenarZA(data.pokemon);
     showPokemon();
 })
+
+ordenarAscendete.addEventListener("click",e=>{
+    e.preventDefault();
+    root.innerHTML="";
+    ordenarAsc(data.pokemon);
+    showPokemon();
+})
+
+
+
 

@@ -30,3 +30,14 @@ export const ordenarZA = (data) => {
   }
   data.sort(sortPokemonZA);
 };
+export const ordenarAsc =(data)=>{
+  function sortPokemonAsc(a,b){
+  if (a.num<b.num){
+    return -1;
+  }
+  if (a.num>b.num){
+    return 1;
+  }
+  }
+  data.sort(sortPokemonAsc)
+}

@@ -30,7 +30,10 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     background: rgb(240, 208, 148);
-}
+    
+    
+}    
+    
 #menu-header {
     background: rgb(240, 208, 148);
     height: auto;
@@ -120,8 +123,16 @@ ul, ol {
     color: rgb(121, 107, 107);
     text-transform: uppercase;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    flex-direction: column;
+    flex-direction: column;  
+    overflow:hidden;
 }
+ .cardPokemon img {
+    -moz-box-shadow: 0px 0px 30px #DF0101; 
+    -webkit-box-shadow: 0px 0px 30px #FF0000; 
+    box-shadow: 0px 0px 30px #DF0101;
+        mix-blend-mode: multiply;
+        background-color:formato haxedecimal;
+    }
 .nav-toggle{
     color:white;
     background: none;
@@ -141,4 +152,19 @@ footer {
     align-items: center;
     background: rgb(0, 0, 0);
     padding: 0;
+}
+#searchInput { 
+    background-color:rgba(255, 255, 255, 0.917);
+    padding: 10px 20px;
+    display: flex;
+    max-width:70%;
+    max-height:80%;
+    margin:10px 40px 20px 360px;
+    border: 2px ridge rgb(13, 77, 227);
+    border-radius: 20px ;   
+}
+#search{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
 }
