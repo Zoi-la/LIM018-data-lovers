@@ -16,7 +16,7 @@ export const ordenarAZ = (data) => {
     }
     // TODO: falta un caso por contemplar
  }
-  data.sort(sortPokemon);
+  return data.sort(sortPokemon);
 };
 
 export const ordenarZA = (data) => {
