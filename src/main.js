@@ -1,10 +1,10 @@
 import data from './data/pokemon/pokemon.js';
-import {ordenarAZ,ordenarZA,ordenarAsc} from './data.js';
+import {ordenarAZ,ordenarZA,ordenarAsc,ordenarDesc} from './data.js';
 
 let ordenar= document.getElementById("btn-ordenarAZ");
 let ordenarZa=document.getElementById("btn-ordenarZA");
 let ordenarAscendete=document.getElementById("btn-ordenarAsc");
-
+let ordenarDescendente=document.getElementById("btn-ordenarDesc");
 
 let root= document.querySelector('#root');
 let showPokemon= ()=>{
@@ -56,6 +56,12 @@ ordenarAscendete.addEventListener("click",e=>{
     showPokemon();
 })
 
+ordenarDescendente.addEventListener("click",e=>{
+    e.preventDefault();
+    root.innerHTML="";
+    ordenarDesc(data.pokemon);
+    showPokemon();
+})
 
 
 

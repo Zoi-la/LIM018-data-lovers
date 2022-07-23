@@ -18,6 +18,7 @@ export const ordenarAZ = (data) => {
  }
   return data.sort(sortPokemon);
 };
+//Funcion ordenar ZA
 
 export const ordenarZA = (data) => {
   function sortPokemonZA(a,b){
@@ -30,6 +31,8 @@ export const ordenarZA = (data) => {
   }
   data.sort(sortPokemonZA);
 };
+
+//Funcion ordenar Asc
 export const ordenarAsc =(data)=>{
   function sortPokemonAsc(a,b){
   if (a.num<b.num){
@@ -41,3 +44,16 @@ export const ordenarAsc =(data)=>{
   }
   data.sort(sortPokemonAsc)
 }
+
+//Funcion ordenar Desc
+export const ordenarDesc=(data)=>{
+  function sortPokemonDesc(a,b){
+    if (a.num<b.num){
+      return 1;
+    }
+      if (a.num>b.num){
+        return -1;
+      }
+    }
+    data.sort(sortPokemonDesc)
+   }
