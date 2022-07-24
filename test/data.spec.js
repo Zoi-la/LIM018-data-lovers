@@ -1,4 +1,4 @@
-import { example, anotherExample } from '../src/data.js';
+import { example, ordenarAZ } from '../src/data.js';
 
 
 describe('example', () => {
@@ -11,13 +11,15 @@ describe('example', () => {
   });
 });
 
+let arrayObj =[{name:'alfa',}, {name:'zapdos'}, {name:'bulbasur'}];
+let arrayOrd= [{name:'alfa'}, {name:'bulbasur'}, {name:'zapdos'}];
 
-describe('anotherExample', () => {
+describe('ordenarAZ', () => {
   it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
+    expect(typeof ordenarAZ).toBe('function');
   });
 
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+  it('returns `ordenarAZ`', () => {
+    expect(ordenarAZ(arrayObj)).toStrictEqual(arrayOrd);
   });
 });
