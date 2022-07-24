@@ -43,8 +43,7 @@ export const ordenarAsc =(data)=>{
   }
   }
   data.sort(sortPokemonAsc)
-}
-
+};
 //Funcion ordenar Desc
 export const ordenarDesc=(data)=>{
   function sortPokemonDesc(a,b){
@@ -56,4 +55,15 @@ export const ordenarDesc=(data)=>{
       }
     }
     data.sort(sortPokemonDesc)
-   }
+  };
+
+  //funcion Buscar
+  export const search = (data,enter)=>{
+    function igual(x){
+    if (enter === x.name || enter === x.num){
+      return x;
+    }
+  } 
+  data.filter(igual);
+};
+

@@ -24,20 +24,17 @@ body{
     align-content: center;
     align-items: center;
 }
+
+form{
+    display: flex;
+}
 #root{
     display: flex;
     /* flex-direction: column; */
     flex-wrap: wrap;
     justify-content: center;
     background: rgb(240, 208, 148);
-<<<<<<< HEAD
-}
-=======
-    
-    
-}    
-    
->>>>>>> dd0b63d91ad3bedbab7770657ef857ffd4f1db42
+}     
 #menu-header {
     background: rgb(240, 208, 148);
     height: auto;

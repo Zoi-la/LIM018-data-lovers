@@ -1,10 +1,13 @@
 import data from './data/pokemon/pokemon.js';
-import {ordenarAZ,ordenarZA,ordenarAsc,ordenarDesc} from './data.js';
+import {ordenarAZ,ordenarZA,ordenarAsc,ordenarDesc,search} from './data.js';
 
 let ordenar= document.getElementById("btn-ordenarAZ");
 let ordenarZa=document.getElementById("btn-ordenarZA");
 let ordenarAscendete=document.getElementById("btn-ordenarAsc");
 let ordenarDescendente=document.getElementById("btn-ordenarDesc");
+let btnSearch=document.getElementById("btn-search");
+let searchPokemon = document.getElementById("searchInput");
+
 
 let root= document.querySelector('#root');
 let showPokemon= ()=>{
@@ -63,5 +66,12 @@ ordenarDescendente.addEventListener("click",e=>{
     showPokemon();
 })
 
+btnSearch.addEventListener("click",e=>{
+    e.preventDefault();
+    root.innerHTML="";
+    search(data.pokemon,searchPokemon.value.toLowerCase());
+  showPokemon();  
+}
+)
 
 
