@@ -42,7 +42,7 @@ export const ordenarAsc =(data)=>{
     return 1;
   }
   }
-  return data.sort(sortPokemonAsc)
+ return  data.sort(sortPokemonAsc)
 };
 //Funcion ordenar Desc
 export const ordenarDesc=(data)=>{
@@ -54,16 +54,21 @@ export const ordenarDesc=(data)=>{
         return -1;
       }
     }
-    return data.sort(sortPokemonDesc)
+   return data.sort(sortPokemonDesc)
   };
 
   //funcion Buscar
-  export const search = (data, enter)=>{
-    function igual(x){
-      if (enter === x.name || enter === x.num){
-      return x;
-      }
+  export const search = (data,enter)=>{
+    function buscarPokemon(x){
+    if (enter == x.name || enter == x.num){
+     return(x);
+
+    }
   } 
-  data.filter(igual);
-  };
+  return data.filter(buscarPokemon);
+
+}
+
+//filtrar por tipo
+
 

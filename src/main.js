@@ -6,7 +6,9 @@ let ordenarZa=document.getElementById("btn-ordenarZA");
 let ordenarAscendete=document.getElementById("btn-ordenarAsc");
 let ordenarDescendente=document.getElementById("btn-ordenarDesc");
 let btnSearch=document.getElementById("btn-search");
-let searchPokemon = document.getElementById("searchInput");
+
+
+
 let root= document.querySelector('#root');
 
 let showPokemon= ()=>{
@@ -68,9 +70,8 @@ ordenarDescendente.addEventListener("click",e=>{
 btnSearch.addEventListener("click",e=>{
     e.preventDefault();
     root.innerHTML="";
-    search(data.pokemon,searchPokemon.value.toLowerCase());
-    showPokemon();  
-});
-
+    let searchPokemon = document.getElementById("searchInput").value;
+    console.log(search(data.pokemon,searchPokemon));
+})
 
 
