@@ -37,7 +37,6 @@ it('returns `ordenarZA`', () => {
   });
 });
 
-
 describe('ordenarAsc', () => {
   it('is a function', () => {
     expect(typeof ordenarAsc).toBe('function');
@@ -52,7 +51,7 @@ describe('ordenarDesc', () => {
   it('is a function', () => {
     expect(typeof ordenarDesc).toBe('function');
   });
-
+  
   it('returns `ordenarDesc`', () => {
     expect(ordenarDesc(arrayObj1)).toStrictEqual(arrayOrd1);
   });

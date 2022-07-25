@@ -1,18 +1,21 @@
 import data from './data/pokemon/pokemon.js';
-import {ordenarAZ,ordenarZA,ordenarAsc,ordenarDesc,search} from './data.js';
+import {ordenarAZ,ordenarZA,ordenarAsc,ordenarDesc,search, filtrar} from './data.js';
+//import pokemon from './data/pokemon/pokemon.js';
 
 let ordenar= document.getElementById("btn-ordenarAZ");
 let ordenarZa=document.getElementById("btn-ordenarZA");
 let ordenarAscendete=document.getElementById("btn-ordenarAsc");
 let ordenarDescendente=document.getElementById("btn-ordenarDesc");
 let btnSearch=document.getElementById("btn-search");
+let filtra=document.getElementById("filtrar");
+
 
 
 
 let root= document.querySelector('#root');
 
-let showPokemon= ()=>{
-    data.pokemon.forEach((pokemon)=>{    
+let showPokemon= (arrayPokemon)=>{
+    arrayPokemon.forEach((pokemon)=>{    
         //creando caja
         let cajaPrincipal=document.createElement("div")
         cajaPrincipal.classList.add("cardPokemon");
@@ -37,41 +40,47 @@ let showPokemon= ()=>{
         root.appendChild(cajaPrincipal);
     });
 }
-showPokemon();
+showPokemon(data.pokemon);
 
 ordenar.addEventListener("click",e=>{
     e.preventDefault();
     root.innerHTML="";
     ordenarAZ(data.pokemon);
-    showPokemon();
+    showPokemon(data.pokemon);
 });
 
 ordenarZa.addEventListener("click",e=>{
     e.preventDefault();
     root.innerHTML="";
     ordenarZA(data.pokemon);
-    showPokemon();
+    showPokemon(data.pokemon);
 });
 
 ordenarAscendete.addEventListener("click",e=>{
     e.preventDefault();
     root.innerHTML="";
     ordenarAsc(data.pokemon);
-    showPokemon();
+    showPokemon(data.pokemon);
 });
 
 ordenarDescendente.addEventListener("click",e=>{
     e.preventDefault();
     root.innerHTML="";
     ordenarDesc(data.pokemon);
-    showPokemon();
+    showPokemon(data.pokemon);
 });
 
 btnSearch.addEventListener("click",e=>{
     e.preventDefault();
     root.innerHTML="";
     let searchPokemon = document.getElementById("searchInput").value;
-    console.log(search(data.pokemon,searchPokemon));
-})
+    let result = (search(data.pokemon,searchPokemon));
+    showPokemon(result)
+});
 
-
+filtra.addEventListener("click", e =>{
+    e.preventDefault();
+    root.innerHTML=""
+    filtrar(data.pokemon, "grass")
+    console.log(filtrar(data.pokemon, "grass"))
+});
