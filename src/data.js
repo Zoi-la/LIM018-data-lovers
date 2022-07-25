@@ -60,12 +60,15 @@ export const ordenarDesc=(data)=>{
   //funcion Buscar
   export const search = (data,enter)=>{
     function buscarPokemon(x){
-    if (enter === x.name || enter === x.num){
-      return x;
+    if (enter == x.name || enter == x.num){
+     return(x);
+
     }
   } 
-  data.filter(buscarPokemon);
+  return data.filter(buscarPokemon);
+
 }
 
-//filtrar pokemon
+//filtrar por tipo
+
 
