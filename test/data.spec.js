@@ -11,9 +11,11 @@ describe('example', () => {
   });
 });
 
-// Test ordenar AZ
-let arrayObj =[{name:'alfa',}, {name:'zapdos'}, {name:'bulbasur'}];
-let arrayOrd= [{name:'alfa'}, {name:'bulbasur'}, {name:'zapdos'}];
+let arrayObj =[{name:'alfa', num:'001'}, {name:'zapdos', num:'003'}, {name:'bulbasur', num:'002'}];
+let arrayOrd= [{name:'alfa', num:'001'}, {name:'bulbasur', num:'002'}, {name:'zapdos', num:'003'}];
+let arrayObj1 =[{name:'alfa', num:'001'}, {name:'zapdos', num:'003'}, {name:'bulbasur', num:'002'}];
+let arrayOrd1 =[{name:'zapdos', num:'003'}, {name:'bulbasur', num:'002'}, {name:'alfa', num:'001'}];
+
 
 describe('ordenarAZ', () => {
   it('is a function', () => {
@@ -25,24 +27,15 @@ describe('ordenarAZ', () => {
   });
 });
 
-// Test ordenar ZA
-let arrayObj_ordZA =[{name:'alfa',}, {name:'zapdos'}, {name:'bulbasur'}];
-let arrayOrd_ordZA= [{name:'zapdos'}, {name:'bulbasur'}, {name:'alfa'}];
-
 describe('ordenarZA', () => {
   it('is a function', () => {
     expect(typeof ordenarZA).toBe('function');
   });
 
-  it('returns `ordenarZA`', () => {
-    expect(ordenarZA(arrayObj_ordZA)).toStrictEqual(arrayOrd_ordZA);
+it('returns `ordenarZA`', () => {
+  expect(ordenarZA(arrayObj1)).toStrictEqual(arrayOrd1);
   });
 });
-
-//Test ordenas Asc
-
-let array_Obj =[{num:'001',}, {num:'009'}, {num:'006'}];
-let array_Ord= [{num:'001'}, {num:'006'}, {num:'009'}];
 
 describe('ordenarAsc', () => {
   it('is a function', () => {
@@ -50,21 +43,16 @@ describe('ordenarAsc', () => {
   });
 
   it('returns `ordenarAsc`', () => {
-    expect(ordenarAsc(array_Obj)).toStrictEqual(array_Ord);
+    expect(ordenarAsc(arrayObj)).toStrictEqual(arrayOrd);
   });
 });
-
-//Test ordenas Des
-
-let array_Obj_Desc =[{num:'001',}, {num:'009'}, {num:'006'}];
-let array_Ord_Desc= [{num:'009'}, {num:'006'}, {num:'001'}];
 
 describe('ordenarDesc', () => {
   it('is a function', () => {
     expect(typeof ordenarDesc).toBe('function');
   });
-
+  
   it('returns `ordenarDesc`', () => {
-    expect(ordenarDesc(array_Obj_Desc)).toStrictEqual(array_Ord_Desc);
+    expect(ordenarDesc(arrayObj1)).toStrictEqual(arrayOrd1);
   });
 });

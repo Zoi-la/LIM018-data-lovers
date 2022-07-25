@@ -65,7 +65,13 @@ export const ordenarDesc=(data)=>{
     }
   } 
   return data.filter(buscarPokemon);
-};
+}
+
 //filtrar por tipo
 
-
+export const filtrar = (data, type)=>{
+  let pokemonType=data.filter((x)=> {
+    return x.type == type;
+  });
+  return pokemonType;
+}
