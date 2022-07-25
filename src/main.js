@@ -7,9 +7,8 @@ let ordenarAscendete=document.getElementById("btn-ordenarAsc");
 let ordenarDescendente=document.getElementById("btn-ordenarDesc");
 let btnSearch=document.getElementById("btn-search");
 let searchPokemon = document.getElementById("searchInput");
-
-
 let root= document.querySelector('#root');
+
 let showPokemon= ()=>{
     data.pokemon.forEach((pokemon)=>{    
         //creando caja
@@ -73,5 +72,6 @@ btnSearch.addEventListener("click",e=>{
   showPokemon();  
 }
 )
+
 
 
