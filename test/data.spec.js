@@ -26,6 +26,8 @@ describe('ordenarAZ', () => {
 });
 
 // Test ordenar ZA
+let arrayObj_ordZA =[{name:'alfa',}, {name:'zapdos'}, {name:'bulbasur'}];
+let arrayOrd_ordZA= [{name:'zapdos'}, {name:'bulbasur'}, {name:'alfa'}];
 
 describe('ordenarZA', () => {
   it('is a function', () => {
@@ -33,7 +35,7 @@ describe('ordenarZA', () => {
   });
 
   it('returns `ordenarZA`', () => {
-    expect(ordenarAZ(arrayObj)).toStrictEqual(arrayOrd);
+    expect(ordenarZA(arrayObj_ordZA)).toStrictEqual(arrayOrd_ordZA);
   });
 });
 
