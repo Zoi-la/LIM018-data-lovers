@@ -128,11 +128,9 @@ ul, ol {
     overflow:hidden;
 }
  .cardPokemon img {
-    -moz-box-shadow: 0px 0px 30px #DF0101; 
-    -webkit-box-shadow: 0px 0px 30px #FF0000; 
-    box-shadow: 0px 0px 30px #DF0101;
-        mix-blend-mode: multiply;
-        background-color:formato haxedecimal;
+    height: 200px;
+    width: 100%;
+    margin-top: 1em;
     }
 .nav-toggle{
     color:white;
