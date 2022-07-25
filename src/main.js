@@ -70,7 +70,7 @@ btnSearch.addEventListener("click",e=>{
     e.preventDefault();
     root.innerHTML="";
     search(data.pokemon,searchPokemon.value.toLowerCase());
-  showPokemon();  
+    showPokemon();
 }
 )
 
