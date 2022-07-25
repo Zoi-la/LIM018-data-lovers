@@ -7,10 +7,8 @@ let ordenarAscendete=document.getElementById("btn-ordenarAsc");
 let ordenarDescendente=document.getElementById("btn-ordenarDesc");
 let btnSearch=document.getElementById("btn-search");
 
-
-
 let root= document.querySelector('#root');
-let showPokemon= ()=>{
+let showPokemon= (array)=>{
     data.pokemon.forEach((pokemon)=>{    
         //creando caja
         let cajaPrincipal=document.createElement("div")
