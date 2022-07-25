@@ -42,36 +42,35 @@ ordenar.addEventListener("click",e=>{
     root.innerHTML="";
     ordenarAZ(data.pokemon);
     showPokemon();
-})
+});
 
 ordenarZa.addEventListener("click",e=>{
     e.preventDefault();
     root.innerHTML="";
     ordenarZA(data.pokemon);
     showPokemon();
-})
+});
 
 ordenarAscendete.addEventListener("click",e=>{
     e.preventDefault();
     root.innerHTML="";
     ordenarAsc(data.pokemon);
     showPokemon();
-})
+});
 
 ordenarDescendente.addEventListener("click",e=>{
     e.preventDefault();
     root.innerHTML="";
     ordenarDesc(data.pokemon);
     showPokemon();
-})
+});
 
 btnSearch.addEventListener("click",e=>{
     e.preventDefault();
     root.innerHTML="";
     search(data.pokemon,searchPokemon.value.toLowerCase());
-  showPokemon();  
-}
-)
+    showPokemon();  
+});
 
 
 
