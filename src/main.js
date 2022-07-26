@@ -9,9 +9,6 @@ let ordenarDescendente=document.getElementById("btn-ordenarDesc");
 let btnSearch=document.getElementById("btn-search");
 let filtra=document.getElementById("filtrar");
 
-
-
-
 let root= document.querySelector('#root');
 
 let showPokemon= (arrayPokemon)=>{
