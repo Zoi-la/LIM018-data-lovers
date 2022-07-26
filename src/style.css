@@ -49,16 +49,16 @@ form{
     margin:0px 460px 0px 20px;
 }
 .nav li a {
-    background-color: rgb(235, 157, 39);
-    color: rgb(45, 49, 249);
-    padding: 5px 5px;
+    background-color: rgb(240, 208, 148);
     display: flex;
-    border: 2px ridge rgb(13, 77, 227);
-    align-items: center;
     justify-content: center;
+    padding: 0px 0px 0px 10px;
+    align-items: center;
 }
+
 .nav li a:hover {
-    background-color:#fffdf8;
+    background-image: linear-gradient(to right, rgb(191, 240, 152) , rgb(111, 214, 255));
+    
 }
 .nav li ul {
     display:none;
@@ -79,7 +79,7 @@ form{
 .nav li img {
     width: 50px;
     height: 50px;
-    padding: 10px;
+    padding: 0px 5px 5px 10px;
 }
 ul, ol {
     list-style:none;
@@ -155,7 +155,7 @@ footer {
 #searchInput { 
     background-color:rgba(255, 255, 255, 0.917);
     padding: 10px 20px;
-    display: flex;
+    display: flex;    
     max-width:70%;
     max-height:80%;
     margin:10px 40px 20px 360px;

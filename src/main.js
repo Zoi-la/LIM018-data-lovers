@@ -74,10 +74,13 @@ btnSearch.addEventListener("click",e=>{
     showPokemon(result)
 });
 
-filtra.addEventListener("click", e =>{
-    e.preventDefault();
-    root.innerHTML=""
-    let filtrarPokemon = (filtrar(pokemon.type.includes(type)))
-   showPokemon(filtrarPokemon)
-   console.log(filtrarPokemon);
+filtra.addEventListener("click", function (element){
+    console.log("evento",element.target.id);
+    //Si al hacer click en un tipo de id (grass,poison, etc),nos devuelva los pokemon filtrado por tipo,sino no haga nada.
+    if(element.target.id==="grass"||element.target.id==="poison"){
+        root.innerHTML="";
+    let filtro=(filtrar(data.pokemon, element.target.id))
+    showPokemon(filtro) 
+    }else {
+    }
 });

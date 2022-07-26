@@ -16,7 +16,6 @@ let arrayOrd= [{name:'alfa', num:'001'}, {name:'bulbasur', num:'002'}, {name:'za
 let arrayObj1 =[{name:'alfa', num:'001'}, {name:'zapdos', num:'003'}, {name:'bulbasur', num:'002'}];
 let arrayOrd1 =[{name:'zapdos', num:'003'}, {name:'bulbasur', num:'002'}, {name:'alfa', num:'001'}];
 
-
 describe('ordenarAZ', () => {
   it('is a function', () => {
     expect(typeof ordenarAZ).toBe('function');
@@ -51,8 +50,18 @@ describe('ordenarDesc', () => {
   it('is a function', () => {
     expect(typeof ordenarDesc).toBe('function');
   });
-  
+
   it('returns `ordenarDesc`', () => {
     expect(ordenarDesc(arrayObj1)).toStrictEqual(arrayOrd1);
+  });
+});
+
+describe('search', () => {
+  it('is a function', () => {
+    expect(typeof search).toBe('function');
+  });
+  
+  it('returns `search`', () => {
+    expect(search(arrayObj1)).toStrictEqual(arrayOrd1);
   });
 });
