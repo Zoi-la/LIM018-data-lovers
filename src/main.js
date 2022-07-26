@@ -9,10 +9,9 @@ let ordenarDescendente=document.getElementById("btn-ordenarDesc");
 let btnSearch=document.getElementById("btn-search");
 let filtra=document.getElementById("filtrar");
 
-
 let root= document.querySelector('#root');
-let showPokemon= (array)=>{
-    data.pokemon.forEach((pokemon)=>{    
+let showPokemon= (arrayPokemon)=>{
+    arrayPokemon.forEach((pokemon)=>{    
         //creando caja
         let cajaPrincipal=document.createElement("div")
         cajaPrincipal.classList.add("cardPokemon");
@@ -78,6 +77,7 @@ btnSearch.addEventListener("click",e=>{
 filtra.addEventListener("click", e =>{
     e.preventDefault();
     root.innerHTML=""
-    filtrar(data.pokemon, "grass")
-    console.log(filtrar(data.pokemon, "grass"))
+    let filtrarPokemon = (filtrar(pokemon.type.includes(type)))
+   showPokemon(filtrarPokemon)
+   console.log(filtrarPokemon);
 });
