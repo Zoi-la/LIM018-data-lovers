@@ -82,5 +82,6 @@ filtra.addEventListener("click", e =>{
     e.preventDefault();
     root.innerHTML=""
     filtrar(data.pokemon, "grass")
-    console.log(filtrar(data.pokemon, "grass"))
+    let filtro=(filtrar(data.pokemon, "grass"))
+    showPokemon(filtro)
 });
