@@ -48,23 +48,26 @@ form{
     max-height:80%;
     margin:0px 460px 0px 20px;
 }
-.nav li a {
-    background-color: rgb(235, 157, 39);
-    color: rgb(45, 49, 249);
-    padding: 5px 5px;
+.nav li {
+    background-color: rgb(240, 208, 148);
     display: flex;
-    border: 2px ridge rgb(13, 77, 227);
-    align-items: center;
     justify-content: center;
+    padding: 5px 5px 5px 5px;
+    align-items: center;
+    border:1px ridge rgb(13, 77, 227);
 }
-.nav li a:hover {
-    background-color:#fffdf8;
+
+.nav li:hover {
+    background-image: linear-gradient(to right, rgb(191, 240, 152) , rgb(111, 214, 255));
 }
+
 .nav li ul {
     display:none;
     position:absolute;
     min-width:140px;
     padding: 0px;
+    border:1px ridge rgb(13, 77, 227);
+    
 }
 .nav li:hover > ul {
     display:block;
@@ -79,10 +82,7 @@ form{
 .nav li img {
     width: 50px;
     height: 50px;
-    padding: 10px;
-}
-ul, ol {
-    list-style:none;
+    padding: 0px 5px 5px 10px;
 }
 .nav {
     max-width: 992px;
@@ -90,17 +90,13 @@ ul, ol {
     font-family:Arial, Helvetica, sans-serif;
     padding: 0%;
 }
+ul {
+    list-style:none;
+}
 .nav > li {
     float:left;
 }
-.nav-menu-link{
-    padding: 8px 12px;
-    border-radius: 3px;
-}
-.nav-menu-link:hover{
-    background-color: rgba(255,205,0,255);
-    transition: 0.5s;
-}
+
 .nav-menu{
     display: flex;
     margin-left: 20px;
@@ -155,15 +151,16 @@ footer {
 #searchInput { 
     background-color:rgba(255, 255, 255, 0.917);
     padding: 10px 20px;
-    display: flex;
+    display: flex;    
     max-width:70%;
-    max-height:80%;
+    max-height:70%;
     margin:10px 40px 20px 360px;
-    border: 2px ridge rgb(13, 77, 227);
+    border: 1px ridge rgb(13, 77, 227);
     border-radius: 20px ;   
 }
-#search{
-    align-items: center;
+#btn-search{
     display: flex;
-    flex-direction: row;
+    margin:auto; 
+    border: 1px ridge rgb(13, 77, 227); 
+    padding: 10px 20px;
 }

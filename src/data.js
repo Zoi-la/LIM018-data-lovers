@@ -62,13 +62,24 @@ export const ordenarDesc=(data)=>{
     function buscarPokemon(x){
     if (enter == x.name || enter == x.num){
      return(x);
-
     }
   } 
   return data.filter(buscarPokemon);
-
 }
 
 //filtrar por tipo
 
-
+export const filtrar = (data, type)=>{
+  let pokemonType=data.filter((x)=> {
+    return x.type == type;
+  });
+  return pokemonType;
+}
+//
+export const type = (data)=>{
+  let arr = []
+  for (let i = 0 ; i<data.length ; i++ ){
+    arr=arr.concat(arr[i]);
+  }
+  console.log(arr)
+}

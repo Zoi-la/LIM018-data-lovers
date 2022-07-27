@@ -19,42 +19,43 @@
           <i class="fas fa-bars"></i>
         </button>
 				<ul class="nav">
-					<li><a href=""><img src="img/pokedex.png">INICIO</a></li>
-					<li><a href=""> <img src="img/batle.png">ORDENAR</a>
+					<li><img id="imagen" src="img/pokedex.png">INICIO</li>
+					<li><img id="imagen" src="img/pokemon-go-icon-png-24.jpg">ORDENAR
 						<ul>
-							<li id="btn-ordenarAZ"><a href="">A-Z</a></li>
-							<li id="btn-ordenarZA"><a href="">Z-A</a></li>
-							<li id="btn-ordenarAsc"><a href="">Ascendente</a></li>
-							<li id="btn-ordenarDesc"><a href="">Descendente</a></li>
+							<li id="btn-ordenarAZ">A-Z</li>
+							<li id="btn-ordenarZA">Z-A</li>
+							<li id="btn-ordenarAsc">Ascendente</li>
+							<li id="btn-ordenarDesc">Descendente</li>
 						</ul>
 					</li>
-					<li><a href=""><img src="img/brujula png.png">FILTRAR</a>
-                <ul>               
-                <li><a href="">Grass</a></li>
-                <li><a href="">Poison</a></li>
-                <li><a href="">Fire</a></li>
-                <li><a href="">Flying</a></li>
-                <li><a href="">Water</a></li>
-                <li><a href="">Bug</a></li>
-                <li><a href="">Electric</a></li>
-                <li><a href="">Ground</a></li>
-                <li><a href="">Fighting</a></li>
-                <li><a href="">Psychic</a></li>
-                <li><a href="">Rock</a></li>
-                <li><a href="">Ice</a></li>
-                <li><a href="">Ghost</a></li>
-                <li><a href="">Dragon</a></li>
-                <li><a href="">Fairy</a></li>
-                <li><a href="">Dark</a></li>
-                <li><a href="">Steel</a></li>
-                <li><a href="">Normal</a></li>                
+					<li id="filtrar">
+            <img id="imagen" src="img/brujula png.png">FILTRAR
+              <ul>               
+                <li id="grass" class="pokemon">Grass</li>
+                <li id="poison" class="pokemon">Poison</li>
+                <li id="fire" class="pokemon">Fire</li>
+                <li id="flying" class="pokemon">Flying</li>
+                <li id="Water" class="pokemon">Water</li>
+                <li id="bug" class="pokemon">Bug</li>
+                <li id="electric" class="pokemon">Electric</li>
+                <li id="ground" class="pokemon">Ground</li>
+                <li id="fighting" class="pokemon">Fighting</li>
+                <li id="psychic" class="pokemon">Psychic</li>
+                <li id="rock" class="pokemon">Rock</li>
+                <li id="ice" class="pokemon">Ice</li>
+                <li id="ghost" class="pokemon">Ghost</li>
+                <li id="dragon" class="pokemon">Dragon</li>
+                <li id="fairy" class="pokemon">Fairy</li>
+                <li id="dark" class="pokemon">Dark</li>
+                <li id="steel" class="pokemon">Steel</li>
+                <li id="normal" class="pokemon">Normal</li>       
               </ul>
           </li> 
         </ul> 
 			</nav><!-- Aqui estamos cerrando la nueva etiqueta nav -->
 		<form id="search" >
       <input  type="search" id="searchInput"/>
-      <input type="button" value="Buscar" id="btn-search"/>
+      <input type="button" value="Buscar🔍" id="btn-search"/>
     </form>
   </header>
     <div id="root">
