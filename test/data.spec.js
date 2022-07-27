@@ -55,13 +55,3 @@ describe('ordenarDesc', () => {
     expect(ordenarDesc(arrayObj1)).toStrictEqual(arrayOrd1);
   });
 });
-
-describe('search', () => {
-  it('is a function', () => {
-    expect(typeof search).toBe('function');
-  });
-  
-  it('returns `search`', () => {
-    expect(search(arrayObj1)).toStrictEqual(arrayOrd1);
-  });
-});
