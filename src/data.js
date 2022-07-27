@@ -75,11 +75,3 @@ export const filtrar = (data, type)=>{
   });
   return pokemonType;
 }
-//
-export const type = (data)=>{
-  let arr = []
-  for (let i = 0 ; i<data.length ; i++ ){
-    arr=arr.concat(arr[i]);
-  }
-  console.log(arr)
-}
