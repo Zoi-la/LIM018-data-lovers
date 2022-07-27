@@ -1,4 +1,4 @@
-import { example, ordenarAZ, ordenarZA, ordenarAsc, ordenarDesc} from '../src/data.js';
+import { example, ordenarAZ, ordenarZA, ordenarAsc, ordenarDesc, search} from '../src/data.js';
 
 
 describe('example', () => {

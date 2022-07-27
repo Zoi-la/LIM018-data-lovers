@@ -63,9 +63,9 @@ export const ordenarDesc=(data)=>{
     if (enter == x.name || enter == x.num){
      return(x);
     }
-  } 
+   } 
   return data.filter(buscarPokemon);
-}
+  };
 
 //filtrar por tipo
 
@@ -74,4 +74,4 @@ export const filtrar = (data, type)=>{
     return x.type == type;
   });
   return pokemonType;
-}
+};
