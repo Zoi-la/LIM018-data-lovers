@@ -1,5 +1,5 @@
 import data from './data/pokemon/pokemon.js';
-import {ordenarAZ,ordenarZA,ordenarAsc,ordenarDesc,search, filtrar} from './data.js';
+import {ordenarAZ,ordenarZA,ordenarAsc,ordenarDesc, search, filtrar, totalPorTipoOptimizada} from './data.js';
 //import pokemon from './data/pokemon/pokemon.js';
 
 let ordenar= document.getElementById("btn-ordenarAZ");
@@ -80,7 +80,8 @@ filtra.addEventListener("click", function (element){
      root.innerHTML="";
      console.log("evento",element.target.id);
      let filtro = filtrar(data.pokemon, element.target.id)
-     showPokemon(filtro) 
-    }else {
+     showPokemon(filtro)
     }
-});
+})
+
+console.log(totalPorTipoOptimizada);

@@ -1,4 +1,4 @@
-import { example, ordenarAZ, ordenarZA, ordenarAsc, ordenarDesc,search} from '../src/data.js';
+import { example, ordenarAZ, ordenarZA, ordenarAsc, ordenarDesc, search, totalPorTipoOptimizada} from '../src/data.js';
 
 
 describe('example', () => {
@@ -15,6 +15,8 @@ let arrayObj =[{name:'alfa', num:'001'}, {name:'zapdos', num:'003'}, {name:'bulb
 let arrayOrd= [{name:'alfa', num:'001'}, {name:'bulbasur', num:'002'}, {name:'zapdos', num:'003'}];
 let arrayObj1 =[{name:'alfa', num:'001'}, {name:'zapdos', num:'003'}, {name:'bulbasur', num:'002'}];
 let arrayOrd1 =[{name:'zapdos', num:'003'}, {name:'bulbasur', num:'002'}, {name:'alfa', num:'001'}];
+let arrayObj2 =[{name:'alfa'}];
+let arrayOrd2 =[{name:'alfa'}];
 
 describe('ordenarAZ', () => {
   it('is a function', () => {
@@ -53,5 +55,15 @@ describe('ordenarDesc', () => {
 
   it('returns `ordenarDesc`', () => {
     expect(ordenarDesc(arrayObj1)).toStrictEqual(arrayOrd1);
+  });
+});
+
+describe('search', () => {
+  it('is a function', () => {
+    expect(typeof search).toBe('function');
+  });
+
+  it('returns `search`', () => {
+    expect(search(arrayObj2)).toStrictEqual(arrayOrd2);
   });
 });
