@@ -73,8 +73,8 @@ export const filtrar = (data, type) => {
   let pokemonType = data.filter((x) => x.type.includes(type));
   return pokemonType;
 }
-//
 
+//
 export const totalPorTipo = (data, type) => {
   // 1. declarar una variable que va a almacenar el resultado
   let pokemonResult  
