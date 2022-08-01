@@ -1,4 +1,4 @@
-import { example, ordenarAZ, ordenarZA, ordenarAsc, ordenarDesc, search, totalPorTipoOptimizada} from '../src/data.js';
+import { example, ordenarAZ, ordenarZA, ordenarAsc, ordenarDesc, search, filtrar} from '../src/data.js';
 
 
 describe('example', () => {
@@ -17,6 +17,8 @@ let arrayObj1 =[{name:'alfa', num:'001'}, {name:'zapdos', num:'003'}, {name:'bul
 let arrayOrd1 =[{name:'zapdos', num:'003'}, {name:'bulbasur', num:'002'}, {name:'alfa', num:'001'}];
 let arrayObj2 =[{name:'alfa'}];
 let arrayOrd2 =[{name:'alfa'}];
+let arrayObj3 =[{type:'grass'}, {type:'electric'}];
+let arrayOrd3 =[{name:'pikachu'}];
 
 describe('ordenarAZ', () => {
   it('is a function', () => {
@@ -65,5 +67,15 @@ describe('search', () => {
 
   it('returns `search`', () => {
     expect(search(arrayObj2)).toStrictEqual(arrayOrd2);
+  });
+});
+
+describe('filtrar', () => {
+  it('is a function', () => {
+    expect(typeof filtrar).toBe('function');
+  });
+
+  it('returns `filtrar`', () => {
+    expect(filtrar(arrayObj3)).toStrictEqual(arrayOrd3);
   });
 });
