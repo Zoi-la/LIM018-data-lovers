@@ -1,6 +1,5 @@
 import { example, ordenarAZ, ordenarZA, ordenarAsc, ordenarDesc, search} from '../src/data.js';
-import {showPokemon} from '../src/main.js';
-
+i
 
 
 let arrayObj =[{name:'alfa', num:'001'}, {name:'zapdos', num:'003'}, {name:'bulbasur', num:'002'}];
@@ -9,13 +8,6 @@ let arrayObj1 =[{name:'alfa', num:'001'}, {name:'zapdos', num:'003'}, {name:'bul
 let arrayOrd1 =[{name:'zapdos', num:'003'}, {name:'bulbasur', num:'002'}, {name:'alfa', num:'001'}];
 let arrayObj2 =[{name:'alfa'}];
 let arrayOrd2 =[{name:'alfa'}];
-
-describe('showPokemon', () => {
-  it('showPokemon', () => {
-    showPokemon(arrayObj)
-    expect(typeof example).toBe('function');
-  });
-});
 
 
 describe('ordenarAZ', () => {

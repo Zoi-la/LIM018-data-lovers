@@ -11,7 +11,7 @@ let pokePorcentage = document.getElementById("calcular")
 
 
 let root = document.querySelector('#root');
-export let showPokemon = (arrayPokemon) => {
+let showPokemon = (arrayPokemon) => {
     arrayPokemon.forEach((pokemon) => {
         //creando caja
         let cajaPrincipal = document.createElement("div")
@@ -90,7 +90,7 @@ pokePorcentage.addEventListener("click", e => {
     let pokemonPercen = e.target.dataset.id;
     const percenData = (computeStats(data.pokemon, pokemonPercen));
     let divPercen = document.createElement("div")
-    divPercen.innerHTML = `<p class="text">This is the percentage of Pokemon from type ${pokemonPercen}:</p> <h4 class="text"> ${percenData} </h4> <img id="porcentaje" src="img/ash.png"> </img>`;
+    divPercen.innerHTML = `<p class="text">This is the percentage of Pokemon from type ${pokemonPercen}:<strong>${percenData}</strong></p> <img id="porcentaje" src="img/ash.png"> </img>`;
     root.appendChild(divPercen)
 });
 
