@@ -2,15 +2,6 @@
     box-sizing: border-box;
     margin: 0px;
 }
-.header{
-        background-color:  antiquewhite;
-        height: 80px;
-        width: 100%;
-        padding:10px 20px;
-    }
-.nav-menu{
-    display:block;
-}
 body{
     background-color: antiquewhite;
 }
@@ -19,10 +10,7 @@ body{
     background: rgb(241, 5, 60);
     color: white;
     height: 100px;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    align-items: center;
+    padding: 5px 5px 5px 5px
 }
 
 form{
@@ -30,71 +18,61 @@ form{
 }
 #root{
     display: flex;
-    /* flex-direction: column; */
     flex-wrap: wrap;
     justify-content: center;
     background: rgb(240, 208, 148);
 }     
 #menu-header {
     background: rgb(240, 208, 148);
-    height: auto;
     padding: 0px;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start
 }
 #main-header img {
-    max-width:70%;
-    max-height:80%;
-    margin:0px 460px 0px 20px;
+    max-width:80%;
+    max-height:90%;
+    margin:5px 360px 5px 20px;
 }
 .nav li {
     background-color: rgb(240, 208, 148);
-    display: flex;
     justify-content: center;
     padding: 5px 5px 5px 5px;
     align-items: center;
     border:1px ridge rgb(13, 77, 227);
+    min-width:10px;
 }
 
 .nav li:hover {
     background-image: linear-gradient(to right, rgb(191, 240, 152) , rgb(111, 214, 255));
+
 }
 
 .nav li ul {
     display:none;
     position:absolute;
-    min-width:140px;
-    padding: 0px;
+    min-width:150px;
+    padding: 0;
     border:1px ridge rgb(13, 77, 227);
-    
+
 }
 .nav li:hover > ul {
-    display:block;
-}
-.nav li ul li {
-    position:relative;
-}
-.nav li ul li ul {
-    right:-140px;
-    top:50px;
+    display:block; 
 }
 .nav li img {
     width: 50px;
     height: 50px;
-    padding: 0px 5px 5px 10px;
+    margin: 0%;
 }
 .nav {
     max-width: 992px;
     width:auto;
     font-family:Arial, Helvetica, sans-serif;
     padding: 0%;
+    justify-content: center;
+    display: flex;
+  
 }
 ul {
     list-style:none;
-}
-.nav > li {
-    float:left;
 }
 
 .nav-menu{
@@ -117,12 +95,12 @@ ul {
     padding: 20px;
     border: 6px ridge rgb(224, 227, 234);
     border-radius: 10px ;
-    background-color: #EDEDEC;
     color: rgb(121, 107, 107);
     text-transform: uppercase;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     flex-direction: column;  
     overflow:hidden;
+    background-color: rgba(255, 255, 255, 0.986);
 }
  .cardPokemon img {
     height: 200px;
@@ -142,12 +120,14 @@ footer {
     display: flex;
     justify-content: space-around;
     color: rgb(240, 208, 148);
-    height: 50px;
     bottom: 0;
     width: 100%;
     align-items: center;
     background: rgb(0, 0, 0);
-    padding: 0;
+    padding: 0.09em;
+    text-align: center;
+    height: 8.5em;
+
 }
 #searchInput { 
     background-color:rgba(255, 255, 255, 0.917);
@@ -158,10 +138,20 @@ footer {
     margin:10px 40px 20px 360px;
     border: 1px ridge rgb(13, 77, 227);
     border-radius: 20px ;   
+    
 }
 #btn-search{
     display: flex;
     margin:auto; 
     border: 1px ridge rgb(13, 77, 227); 
     padding: 10px 20px;
+    background-image: linear-gradient(to right, rgb(191, 240, 152) , rgb(111, 214, 255));
 }
+
+.text{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: lightseagreen;
+    width: 80%;
+    
+}
+
