@@ -151,7 +151,6 @@ footer {
 .text{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: lightseagreen;
-    width: 80%;
+    background-image: linear-gradient(to right, rgb(191, 240, 152) , rgb(111, 214, 255));
     
 }
-
