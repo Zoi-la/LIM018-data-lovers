@@ -147,6 +147,10 @@ footer {
     padding: 10px 20px;
     background-image: linear-gradient(to right, rgb(191, 240, 152) , rgb(111, 214, 255));
 }
-#root div{
+
+.text{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: lightseagreen;
     background-image: linear-gradient(to right, rgb(191, 240, 152) , rgb(111, 214, 255));
+    
 }
