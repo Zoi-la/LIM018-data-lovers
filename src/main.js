@@ -1,6 +1,6 @@
 import data from './data/pokemon/pokemon.js';
-import {ordenarAZ,ordenarZA,ordenarAsc,ordenarDesc, search, filtrar, totalPorTipoOptimizada} from './data.js';
-import pokemon from './data/pokemon/pokemon.js';
+import {ordenarAZ,ordenarZA,ordenarAsc,ordenarDesc, search, filtrar, totalPorTipoOptimizada } from './data.js';
+//import pokemon from './data/pokemon/pokemon.js';
 //import pokemon from './data/pokemon/pokemon.js';
 
 let ordenar= document.getElementById("btn-ordenarAZ");
@@ -10,6 +10,7 @@ let ordenarDescendente=document.getElementById("btn-ordenarDesc");
 let btnSearch=document.getElementById("btn-search");
 let filtra=document.getElementById("filtrar");
 let totalTipo=document.getElementById("calcular");
+let mostrarCalculo=document.getElementById('stats-container');
 
 let root= document.querySelector('#root');
 let showPokemon= (arrayPokemon)=>{
@@ -42,19 +43,19 @@ showPokemon(data.pokemon);
 
 //About de pokemones
 const infopoke=()=>{
-    const datap=  data.pokemon;
+    const datap =  data.pokemon;
     datap.forEach((element)=>{
             const namep = element.name
             const about = element.about
             console.log(about);
             console.log(namep);
                 
-        })
-    
-}
+    })    
+  }
+  
+  infopoke();
 
 
-infopoke();
 
     ordenar.addEventListener("click",e=>{
         e.preventDefault();
@@ -101,3 +102,5 @@ filtra.addEventListener("click", function (element){
      showPokemon(filtro)
     }
 });
+
+totalTipo.addEventListener()

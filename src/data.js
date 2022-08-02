@@ -89,3 +89,5 @@ export const totalPorTipo = (data, type) => {
 export const totalPorTipoOptimizada = (data, type) => {
   return filtrar(data, type).length
 }
+
+
