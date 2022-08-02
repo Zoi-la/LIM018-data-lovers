@@ -75,17 +75,28 @@ export const filtrar = (data, type) => {
 }
 
 //
-export const totalPorTipo = (data, type) => {
-  // 1. declarar una variable que va a almacenar el resultado
-  let pokemonResult  
-  // 2. filtrar la data por el tipo
-  let filterData = data.filter((x)=>x.type.includes(type))
-  // 3. asignarle el length del array filtrado a la variable que almacena el resultado
-  pokemonResult = filterData.length
-  // 4. retornar la cantidad de pokemons con el tipo seleccionado
-  return pokemonResult
-}
+// export const totalPorTipo = (data, type) => {
+//   // 1. declarar una variable que va a almacenar el resultado
+//   let pokemonResult  
+//   // 2. filtrar la data por el tipo
+//   let filterData = data.filter((x)=>x.type.includes(type))
+//   // 3. asignarle el length del array filtrado a la variable que almacena el resultado
+//   pokemonResult = filterData.length
+//   // 4. retornar la cantidad de pokemons con el tipo seleccionado
+//   return pokemonResult
+// }
 
-export const totalPorTipoOptimizada = (data, type) => {
-  return filtrar(data, type).length
-}
+// export const totalPorTipoOptimizada = (data, type) => {
+//   return filtrar(data, type).length
+// }
+
+//Función para mostrar porcentaje de pokémon por tipo
+export const computeStats = (data, pokemonType) => {
+  let pokePercen = [];
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].type == pokemonType) {
+      pokePercen.push(data[i].type);
+    }
+  }
+  return `${((pokePercen.length) * 100 / 251).toFixed(1)}%`;
+};

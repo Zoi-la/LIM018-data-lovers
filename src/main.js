@@ -1,5 +1,5 @@
 import data from './data/pokemon/pokemon.js';
-import {ordenarAZ,ordenarZA,ordenarAsc,ordenarDesc, search, filtrar, totalPorTipoOptimizada} from './data.js';
+import {ordenarAZ,ordenarZA,ordenarAsc,ordenarDesc, search, filtrar,computeStats } from './data.js';
 import pokemon from './data/pokemon/pokemon.js';
 //import pokemon from './data/pokemon/pokemon.js';
 
@@ -9,7 +9,8 @@ let ordenarAscendete=document.getElementById("btn-ordenarAsc");
 let ordenarDescendente=document.getElementById("btn-ordenarDesc");
 let btnSearch=document.getElementById("btn-search");
 let filtra=document.getElementById("filtrar");
-let totalTipo=document.getElementById("calcular");
+let pokePorcentage=document.getElementById("calcular")
+
 
 let root= document.querySelector('#root');
 let showPokemon= (arrayPokemon)=>{
@@ -39,22 +40,6 @@ let showPokemon= (arrayPokemon)=>{
     });
 }
 showPokemon(data.pokemon);
-
-//About de pokemones
-const infopoke=()=>{
-    const datap=  data.pokemon;
-    datap.forEach((element)=>{
-            const namep = element.name
-            const about = element.about
-            console.log(about);
-            console.log(namep);
-                
-        })
-    
-}
-
-
-infopoke();
 
     ordenar.addEventListener("click",e=>{
         e.preventDefault();
@@ -101,3 +86,18 @@ filtra.addEventListener("click", function (element){
      showPokemon(filtro)
     }
 });
+
+pokePorcentage.addEventListener("click",e=>{
+    e.preventDefault();
+    root.innerHTML="";
+    let pokemonPercen = e.target.id;
+    console.log("evento",e.target.id);
+     const percenData = (computeStats(data.pokemon, pokemonPercen));
+      if (pokemonPercen) {
+        let divPercen=document.createElement("div")
+    divPercen.innerHTML = `<p class="text">This is the percentage of Pokemon from type ${pokemonPercen}:</p> <h4 class="text"> ${percenData} </h4>`;
+    root.appendChild(divPercen) 
+ showPokemon(perce)
+}  
+});
+
