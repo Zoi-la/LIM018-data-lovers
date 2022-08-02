@@ -126,7 +126,7 @@ footer {
     background: rgb(0, 0, 0);
     padding: 0.09em;
     text-align: center;
-    height: 8.5em;
+    height: 5em;
 
 }
 #searchInput { 
@@ -150,7 +150,21 @@ footer {
 
 .text{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: lightseagreen;
+    color: rgb(0 0 0);
     background-image: linear-gradient(to right, rgb(191, 240, 152) , rgb(111, 214, 255));
+<<<<<<< HEAD
     
 }
+=======
+    border-radius: 10px ;
+    width: 300px;
+    height: 50px;
+    align-items: center;
+    padding: 5px 10px 10px 5px
+}
+#porcentaje{
+    width: 225px;
+    height: 274px;
+}
+
+>>>>>>> 1d463da048b25ab2ef3ab0708cf690cdc5626d13
