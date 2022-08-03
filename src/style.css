@@ -152,10 +152,6 @@ footer {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgb(0 0 0);
     background-image: linear-gradient(to right, rgb(191, 240, 152) , rgb(111, 214, 255));
-<<<<<<< HEAD
-    
-}
-=======
     border-radius: 10px ;
     width: 300px;
     height: 50px;
@@ -167,4 +163,3 @@ footer {
     height: 274px;
 }
 
->>>>>>> 1d463da048b25ab2ef3ab0708cf690cdc5626d13

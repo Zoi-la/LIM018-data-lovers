@@ -1,5 +1,5 @@
-import { example, ordenarAZ, ordenarZA, ordenarAsc, ordenarDesc, search} from '../src/data.js';
-i
+import { ordenarAZ, ordenarZA, ordenarAsc, ordenarDesc, search, filtrar} from '../src/data.js';
+
 
 
 let arrayObj =[{name:'alfa', num:'001'}, {name:'zapdos', num:'003'}, {name:'bulbasur', num:'002'}];
