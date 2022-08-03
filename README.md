@@ -70,5 +70,6 @@ Criterios de aceptación:
 ![Pokémon](https://user-images.githubusercontent.com/105623403/182524985-055ec4a9-6ee9-4d86-8158-d76d523e5c44.jpg)
 
 
+![image](https://user-images.githubusercontent.com/105660261/182526212-cc4a9c0b-c585-44d8-9e5b-33371a61e630.png)
 
 
