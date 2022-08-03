@@ -67,9 +67,14 @@ Criterios de aceptación:
 
 #### Prototipo de alta fidelidad
 
-![Pokémon](https://user-images.githubusercontent.com/105623403/182524985-055ec4a9-6ee9-4d86-8158-d76d523e5c44.jpg)
-
-
 ![image](https://user-images.githubusercontent.com/105660261/182526212-cc4a9c0b-c585-44d8-9e5b-33371a61e630.png)
+
+![image](https://user-images.githubusercontent.com/105660261/182526306-c65402d9-8bbd-4cc2-85ef-5defcddd1ffb.png)
+
+![image](https://user-images.githubusercontent.com/105660261/182526345-c296eb1a-79e0-4ddb-9c05-2a152a7463d4.png)
+
+![image](https://user-images.githubusercontent.com/105660261/182526367-4ae356c3-0910-4e0e-a77f-3803f462c354.png)
+
+
 
 
