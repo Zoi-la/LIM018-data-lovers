@@ -69,4 +69,6 @@ Criterios de aceptación:
 
 ![Pokémon](https://user-images.githubusercontent.com/105623403/182524985-055ec4a9-6ee9-4d86-8158-d76d523e5c44.jpg)
 
+https://www.figma.com/file/3BnTC5NWF2Nx7om7odI3ga/Pok%C3%A9mon?node-id=63%3A1327
+
 
