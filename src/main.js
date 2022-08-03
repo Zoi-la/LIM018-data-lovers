@@ -11,7 +11,7 @@ let pokePorcentage = document.getElementById("calcular")
 
 
 let root = document.querySelector('#root');
-let showPokemon = (arrayPokemon) => {
+export let showPokemon = (arrayPokemon) => {
     arrayPokemon.forEach((pokemon) => {
         //creando caja
         let cajaPrincipal = document.createElement("div")
