@@ -4,7 +4,7 @@
 
 * [1. Resumen del Proyecto](#1-resumen-del-proyecto)
 * [2. Historias de Usuarios](#2-historias-de-usuario)
-* [3. Prototipos](#3-prototipos)
+* [3. Diseño de la Interfaz de Usuario](#3-diseño-de-la-interfaz-del-usuario)
 
 ***
 
@@ -57,8 +57,7 @@ Criterios de aceptación:
  
  ▲El usuario debe poder buscar al pokemon por su nombre.
 
-
-##3. Diseño de la Interfaz de Usuario
+## 3. Diseño de la Interfaz de Usuario
 
 #### Prototipo de baja fidelidad
 
