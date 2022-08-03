@@ -4,8 +4,7 @@
 
 * [1. Resumen del Proyecto](#1-resumen-del-proyecto)
 * [2. Historias de Usuarios](#2-historias-de-usuario)
-* [3. Prototipo de Baja Fidelidad](#3-prototipo-de-baja-fidelidad)
-* [4. Prototipo de Alta Fidelidad](#4-prototipo-de-alta-fidelidad)
+* [3. Prototipos](#3-prototipos)
 
 ***
 
@@ -58,43 +57,8 @@ Criterios de aceptación:
  
  ▲El usuario debe poder buscar al pokemon por su nombre.
 
-## 3. Diseño interfaz usuario
-Prototipo de baja fidelidad
 
-
-
-## 4. Consideraciones generales
-
-* Este proyecto se debe resolver en duplas.
-* El proyecto será entregado subiendo tu código a GitHub (commit/push) y la
-  interfaz será desplegada usando [GitHub Pages](https://pages.github.com/).
-* Tiempo para completarlo: Toma como referencia 4 semanas.![prototipo baja fidelidad](https://user-images.githubusercontent.com/105623403/182523447-91972212-d640-4c81-8397-f2200425e72f.jpeg)
-
-
-## 5. Criterios de aceptación mínimos del proyecto
-
-Los criterios para considerar que has completado este proyecto son:
-
-### Definición del producto
-
-Documenta brevemente tu trabajo en el archivo `README.md` de tu repositorio,
-contándonos cómo fue tu proceso de diseño y cómo crees que el producto resuelve
-el problema (o problemas) que tiene tu usuario.
-
-### Historias de usuario
-
-Una vez que entiendas las necesidades de tus usuarios, escribe las [Historias
-de Usuario](https://es.wikipedia.org/wiki/Historias_de_usuario) que representen
-todo lo que el usuario necesita hacer/ver. Las **Historias de Usuario** deben
-ser el resultado de tu proceso de investigación o _research_ de tus usuarios.
-
-Asegúrate de incluir la definición de terminado (_definition of done_) y los
-Criterios de Aceptación para cada una.
-
-En la medida de lo posible, termina una historia de usuario antes de pasar
-a la siguiente (Cumple con Definición de Terminado + Criterios de Aceptación).
-
-### Diseño de la Interfaz de Usuario
+##3. Diseño de la Interfaz de Usuario
 
 #### Prototipo de baja fidelidad
 
